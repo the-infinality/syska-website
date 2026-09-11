@@ -1,0 +1,15 @@
+.button-1{
+    background: rgb(67,181,117);
+    background: linear-gradient(90deg, rgba(67,181,117,1) 35%, rgba(3,158,237,1) 100%);
+    color: #000;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 18px !important;
+    font-weight: 600;
+    padding: 10px 34px;
+    border: none !important;
+    &:hover{
+        background: rgb(3,158,237);
+        background: linear-gradient(90deg, rgba(3,158,237,1) 35%, rgba(67,181,117,1) 100%);
+    }
+}

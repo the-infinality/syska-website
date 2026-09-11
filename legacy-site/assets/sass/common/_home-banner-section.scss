@@ -1,0 +1,91 @@
+.home-banner-section {
+  .main-slider {
+    .inner-slide {
+      min-height: 1000px;
+      background-position: center right;
+      background-size: cover; 
+      background-repeat: no-repeat;
+      img {
+        margin-top: 200px;
+        margin-right: 5vw;
+      }
+    }
+  }
+
+  .slick-dots{
+    bottom: 50px;
+  }
+  .slick-dots li button{
+    
+  }
+ 
+  .slick-dots{
+    text-align: right;
+    padding-right: 5%;
+    li{
+      width: auto;
+      button{
+        width: 22px;
+        height: 4px;
+        background-color: rgba(0, 0, 0, 0.5) ;
+        padding: 0;
+        font-size: 0;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff !important;
+          width: 42px !important;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*Tab devices*/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-banner-section {
+    .main-slider {
+      .inner-slide {
+        min-height: 800px;
+        padding: 0 20px;
+        img {
+         margin: 150px auto 30px;
+        }
+      }
+    }
+  }
+}
+
+/*Mobile phones*/
+@media (max-width: 767px) {
+  .home-banner-section {
+    .main-slider {
+      .inner-slide {
+        min-height: 550px;
+        padding: 0 20px;
+        img {
+         margin: 150px auto 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .home-banner-section {
+    .main-slider {
+      .inner-slide {
+        min-height: 550px;
+        padding: 0 20px;
+        img {
+         margin: 150px auto 30px;
+        }
+      }
+    }
+  }
+}

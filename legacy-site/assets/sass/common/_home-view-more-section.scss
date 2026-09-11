@@ -1,0 +1,131 @@
+.home-view-more-section {
+  min-height: 500px;
+  margin-top: -4px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #03a1f4, #44b575);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .container {
+    min-height: 150px;
+    background-color: #000;
+    border-radius: 75px;
+    padding: 0 100px;
+    .row {
+      width: 100%;
+    }
+    p {
+      display: block;
+      font-size: 30px;
+      color: #fff;
+      font-weight: 600;
+      margin: 0;
+      padding: 12px 11px;
+      a {
+        text-align: right;
+        display: inline-block;
+        font-size: 18px;
+        color: #fff;
+        padding-bottom: 7px;
+        border-bottom: 4px solid #fff;
+        text-transform: uppercase;
+        &:hover{
+            color: #3ee4d3;
+            border-bottom: 4px solid #3ee4d3;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home-view-more-section {
+    min-height: 100px;
+    padding: 20px 0;
+    .container {
+      padding: 25px;
+      .row {
+        width: 100%;
+      }
+      p {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0;
+        padding: 12px 11px;
+        line-height: 140%;
+        a {
+          
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-view-more-section {
+    min-height: 100px;
+    padding: 10px;
+    .container {
+      padding: 25px;
+      .row {
+        width: 100%;
+      }
+      p {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        padding: 12px 11px;
+        line-height: 140%;
+        a {
+          
+        }
+      }
+    }
+  }
+}
+
+/*Mobile phones*/
+@media (max-width: 767px) {
+  .home-view-more-section {
+    min-height: 100px;
+    padding: 10px;
+    .container {
+      padding: 25px;
+      .row {
+        width: 100%;
+      }
+      p {
+        text-align: center;
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        padding: 12px 11px;
+        line-height: 140%;
+        a {
+          text-align: center;
+          display: block;
+          padding-bottom: 0px;
+          padding-top: 20px;
+         width: 100%;
+         border: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+}

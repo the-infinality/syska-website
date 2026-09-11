@@ -1,0 +1,21 @@
+@import "details";
+@import "vendor/bootstrap.min";
+@import "vendor/aos";
+@import "vendor/slick";
+@import "vendor/font-awesome.scss";
+
+/* abstract */
+@import "variables";
+@import "overwrites";
+@import "default";
+
+@import "common/_button";
+@import "common/nav";
+@import "common/footer";
+
+@import "common/home-banner-section";
+@import "common/home-view-more-section";
+@import "common/featured-image";
+@import "common/inner-banner";
+@import "common/contact-wrapper"
+

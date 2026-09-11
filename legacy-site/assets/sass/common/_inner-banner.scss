@@ -1,0 +1,26 @@
+.inner-banner {
+  min-height: 785px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/*Tab devices*/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .inner-banner {
+    min-height: 100vh;
+  }
+}
+
+/*Mobile phones*/
+@media (max-width: 767px) {
+  .inner-banner {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+}

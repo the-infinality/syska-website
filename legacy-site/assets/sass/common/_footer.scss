@@ -1,0 +1,189 @@
+footer {
+  min-height: 256px;
+  background: #12141d;
+  padding: 0px 116px;
+  .container-1 {
+    padding: 0 0px;
+    &.top-container {
+      border-bottom: 1px solid #fff;
+      padding: 38px 0;
+      p {
+        font-size: 21px;
+        color: #fff;
+      }
+      .right {
+        p {
+          text-align: right;
+        }
+      }
+      ul {
+        li {
+          float: left;
+          margin-left: 16px;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:hover {
+            background: rgba(62, 228, 211, 0.5);
+          }
+        }
+      }
+    }
+    &.bottom-container {
+      padding: 30px 0;
+      p {
+        font-size: 16px;
+        color: #fff;
+        a {
+          text-transform: uppercase;
+          color: #fff;
+          animation: Color 4s linear infinite;
+          -webkit-animation: Color 4s ease-in-out infinite;
+          &:hover {
+            color: #3ee4d3;
+          }
+        }
+      }
+      .right {
+        p {
+          text-align: right;
+        }
+      }
+    }
+  }
+  @keyframes Color {
+    0% {
+      color: #a0d468;
+    }
+
+    20% {
+      color: #4fc1e9;
+    }
+
+    40% {
+      color: #ffce54;
+    }
+
+    60% {
+      color: #fc6e51;
+    }
+
+    80% {
+      color: #ed5565;
+    }
+
+    100% {
+      color: #ac92ec;
+    }
+  }
+
+  @-moz-keyframes Color {
+    0% {
+      color: #a0d468;
+    }
+
+    20% {
+      color: #4fc1e9;
+    }
+
+    40% {
+      color: #ffce54;
+    }
+
+    60% {
+      color: #fc6e51;
+    }
+
+    80% {
+      color: #ed5565;
+    }
+
+    100% {
+      color: #ac92ec;
+    }
+  }
+
+  @-webkit-keyframes Color {
+    0% {
+      color: #a0d468;
+    }
+
+    20% {
+      color: #4fc1e9;
+    }
+
+    40% {
+      color: #ffce54;
+    }
+
+    60% {
+      color: #fc6e51;
+    }
+
+    80% {
+      color: #ed5565;
+    }
+
+    100% {
+      color: #ac92ec;
+    }
+  }
+}
+/*Tab devices*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  footer {
+    padding: 0px 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    padding: 0px 15px;
+  }
+}
+
+/*Mobile phones*/
+@media (max-width: 767px) {
+  footer {
+    min-height: 256px;
+    text-align: center;
+    padding: 0px 15px;
+    .container-1 {
+      width: 100% !important;
+      &.top-container {
+        border-bottom: 1px solid #fff;
+        padding: 38px 15px;
+        p {
+          font-size: 21px;
+          color: #fff;
+        }
+        .right {
+          p {
+            text-align: center;
+          }
+        }
+        ul {
+          display: table;
+          margin: 0 auto;
+        }
+      }
+      &.bottom-container {
+        padding: 30px 15px;
+        p {
+          font-size: 16px;
+
+        
+        }
+        .right {
+          p {
+            text-align: center;
+          }
+        }
+       
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+}
