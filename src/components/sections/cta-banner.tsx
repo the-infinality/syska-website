@@ -12,7 +12,7 @@ export function CtaBanner() {
   return (
     <section
       id="section-cta-banner"
-      className="relative flex h-[85vh] min-h-[520px] w-full items-center overflow-hidden bg-black"
+      className="relative flex h-[85svh] min-h-[520px] w-full items-center overflow-hidden bg-black"
     >
       <DecorativeVideo
         src="/images/home/bulbs.mp4"

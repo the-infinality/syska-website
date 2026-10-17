@@ -101,7 +101,7 @@ export function SiteHeader() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="text-white hover:bg-white/10 hover:text-white md:hidden"
+                className="size-11 text-white hover:bg-white/10 hover:text-white md:hidden [&_svg]:size-5"
               />
             }
           >

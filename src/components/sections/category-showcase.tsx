@@ -6,11 +6,11 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 import { TextReveal } from "@/components/text-reveal";
 
 const CATEGORIES = [
-  { label: "LED Lighting", video: "/images/home/c-1.mp4" },
-  { label: "Accessories", video: "/images/home/c-2.mp4" },
-  { label: "Personal Care", video: "/images/home/c-3.mp4" },
-  { label: "Home Appliances", video: "/images/home/c-4.mp4" },
-  { label: "Wires & Cables", video: "/images/home/c-5.mp4" },
+  { label: "LED Lighting", video: "/images/home/c-1.mp4", poster: "/images/home/c-1-poster.jpg" },
+  { label: "Accessories", video: "/images/home/c-2.mp4", poster: "/images/home/c-2-poster.jpg" },
+  { label: "Personal Care", video: "/images/home/c-3.mp4", poster: "/images/home/c-3-poster.jpg" },
+  { label: "Home Appliances", video: "/images/home/c-4.mp4", poster: "/images/home/c-4-poster.jpg" },
+  { label: "Wires & Cables", video: "/images/home/c-5.mp4", poster: "/images/home/c-5-poster.jpg" },
 ] as const;
 
 const SHOP_URL = "https://syska.lk/shop/";
@@ -42,7 +42,7 @@ export function CategoryShowcase() {
         </ScrollReveal>
 
         <div className="mt-16 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-16 [-ms-overflow-style:none] [scrollbar-width:none] lg:grid lg:grid-cols-5 lg:gap-5 lg:overflow-visible lg:pb-16 [&::-webkit-scrollbar]:hidden">
-          {CATEGORIES.map(({ label, video }, i) => (
+          {CATEGORIES.map(({ label, video, poster }, i) => (
             <ScrollReveal
               key={label}
               delay={i * 0.08}
@@ -56,6 +56,7 @@ export function CategoryShowcase() {
               >
                 <DecorativeVideo
                   src={video}
+                  poster={poster}
                   className="h-full w-full scale-105 object-cover transition-transform duration-700 ease-out group-hover:scale-100"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/10 transition-opacity duration-500 group-hover:from-black/90" />

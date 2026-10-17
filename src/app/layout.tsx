@@ -66,7 +66,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
     >
-      <body id="top" className="min-h-full flex flex-col">
+      <body id="top" className="min-h-full flex flex-col overflow-x-clip">
         <Preloader />
         <GrainOverlay />
         <SmoothScrollProvider>

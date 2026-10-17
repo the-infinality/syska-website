@@ -25,18 +25,18 @@ export function Hero() {
 
 function HeroBannerOne() {
   return (
-    <section className="relative flex h-screen min-h-[560px] w-full items-center overflow-hidden bg-black sm:min-h-[640px] lg:min-h-[720px]">
-      <div className="absolute inset-0 scale-x-185">
+    <section className="relative flex h-svh min-h-[560px] w-full items-center overflow-hidden bg-black sm:min-h-[640px] lg:min-h-[720px]">
+      <div className="absolute inset-0 lg:scale-x-185">
         <Image
-          src="/images/home/banner-1.png"
+          src="/images/home/banner-1.jpg"
           alt=""
           fill
           priority
           sizes="100vw"
-          className="object-contain"
+          className="object-cover lg:object-contain"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/50 sm:via-black/20" />
 
       <div className="absolute inset-y-0 right-0 hidden w-[45%] items-end justify-center pb-24 sm:flex lg:pb-16">
         <div className="relative h-[55%] w-full max-w-md">
@@ -113,7 +113,7 @@ function HeroBannerOne() {
             </a>
             <Link
               href="/contact"
-              className="text-sm font-medium text-white/90 underline underline-offset-4 transition-colors hover:text-brand-green"
+              className="py-3 text-sm font-medium text-white/90 underline underline-offset-4 transition-colors hover:text-brand-green"
             >
               Contact Us
             </Link>
@@ -145,11 +145,11 @@ function HeroBannerTwo() {
   return (
     <section
       ref={sectionRef}
-      className="relative flex h-screen min-h-[560px] w-full items-center overflow-hidden bg-black sm:min-h-[640px] lg:min-h-[720px]"
+      className="relative flex h-svh min-h-[560px] w-full items-center overflow-hidden bg-black sm:min-h-[640px] lg:min-h-[720px]"
     >
       <div ref={bgRef} className="absolute inset-0 will-change-transform">
         <Image
-          src="/images/home/banner-2.png"
+          src="/images/home/banner-2.jpg"
           alt=""
           fill
           sizes="100vw"
@@ -193,11 +193,11 @@ function HeroBannerThree() {
   return (
     <section
       ref={sectionRef}
-      className="relative flex h-screen min-h-[560px] w-full items-center overflow-hidden bg-black sm:min-h-[640px] lg:min-h-[720px]"
+      className="relative flex h-svh min-h-[560px] w-full items-center overflow-hidden bg-black sm:min-h-[640px] lg:min-h-[720px]"
     >
       <div ref={bgRef} className="absolute inset-0 will-change-transform">
         <Image
-          src="/images/home/banner-3.png"
+          src="/images/home/banner-3.jpg"
           alt=""
           fill
           sizes="100vw"

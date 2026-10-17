@@ -6,6 +6,9 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const FADE_MS = 600;
+// window "load" waits on every autoplay video, which on mobile data can take
+// many seconds; never hold the page behind the loader longer than this.
+const MAX_WAIT_MS = 1800;
 
 export function Preloader() {
   const [loaded, setLoaded] = useState(false);
@@ -18,7 +21,11 @@ export function Preloader() {
     }
     const onLoad = () => setLoaded(true);
     window.addEventListener("load", onLoad);
-    return () => window.removeEventListener("load", onLoad);
+    const cap = setTimeout(onLoad, MAX_WAIT_MS);
+    return () => {
+      window.removeEventListener("load", onLoad);
+      clearTimeout(cap);
+    };
   }, []);
 
   useEffect(() => {
